@@ -3,7 +3,7 @@ html
   head
     meta(charset="utf-8")
     title Framework7 - Full Featured Mobile HTML Framework For Building iOS & Android Apps
-    meta(property="og:image", content="http://idangero.us/framework7/i/f7-banner.jpg")
+    meta(property="og:image", content="i/f7-banner.jpg")
     link(rel="stylesheet", href="css/normalize.css")
     link(rel="stylesheet", href="css/main.css")
     link(rel="shortcut icon" href="favicon.png")
@@ -27,20 +27,20 @@ html
             a(href="./apps/") Demo Apps
             a(href="./showcase/") Showcase
           .github-buttons
-            | <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=watch&count=true" width="100" height="20"></iframe>
-            | <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=fork&count=true" width="100" height="20"></iframe>
+            | <a class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=watch&count=true" width="100" height="20"> Star </a>
+            | <a class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=fork&count=true" width="100" height="20"> Fork </a>
         .phone
-          iframe(src="kitchen-sink-ios/", frameborder="0", scrolling="no")
+          iframe(src="kitchen-sink-ios/index.html", frameborder="0", scrolling="no")
           .statusbar
           .theme-switch
-            a(href="kitchen-sink-ios/", target="_blank").active
+            a(href="kitchen-sink-ios/index.html", target="_blank").active
               .theme-icon
                 .logo-apple
                 span iOS 
               .fullscreen
                 i
                 span Fullscreen<br>Preview
-            a(href="kitchen-sink-material/", target="_blank")
+            a(href="kitchen-sink-material/index.html", target="_blank")
               .theme-icon
                 .logo-android
                 span Material
@@ -53,19 +53,16 @@ html
         .share
           | <!-- AddThis Button BEGIN -->
           | <div class="addthis_toolbox addthis_default_style ">
-          | <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-          | <a class="addthis_button_tweet"></a>
-          | <a class="addthis_button_twitter_follow_native" tw:screen_name="idangerous"></a>
-          | <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+          | <a class="addthis_button_facebook_like" fb:like:layout="button_count">facebook</a>
+          | <a class="addthis_button_tweet">tweet</a>
+          | <a class="addthis_button_twitter_follow_native" tw:screen_name="idangerous">twitter</a>
+          | <a class="addthis_button_google_plusone" g:plusone:size="medium">google+</a>
           | <a class="addthis_counter addthis_pill_style"></a>
           | </div>
           | <!-- AddThis Button END -->
         .flattr-button 
-          a(target="_blank", href="https://flattr.com/submit/auto?\
-              user_id=nolimits4web&url=http://www.idangero.us/framework7/&title=Framework7&\
-              description=Full Featured HTML Framework For Building iOS Apps&language=en_GB&\
-              tags=api,programming,mobile,framework&category=software")
-            img(src="https://api.flattr.com/button/flattr-badge-large.png")
+          a(target="_blank", href="https://flattr.com/submit/auto?user_id=nolimits4web&url=http://www.idangero.us/framework7/&title=Framework7&description=Full%20Featured%20HTML%20Framework%20For%20Building%20iOS%20Apps&language=en_GB&tags=api,programming,mobile,framework&category=software")
+            img(src="i/flattr-badge-large.png")
         .clearfix
     .content.center
       .home-block.home-intro
@@ -253,16 +250,16 @@ html
         .share
           | <!-- AddThis Button BEGIN -->
           | <div class="addthis_toolbox addthis_default_style ">
-          | <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-          | <a class="addthis_button_tweet"></a>
-          | <a class="addthis_button_twitter_follow_native" tw:screen_name="idangerous"></a>
-          | <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+          | <a class="addthis_button_facebook_like" fb:like:layout="button_count">facebook</a>
+          | <a class="addthis_button_tweet">tweet</a>
+          | <a class="addthis_button_twitter_follow_native" tw:screen_name="idangerous">twitter</a>
+          | <a class="addthis_button_google_plusone" g:plusone:size="medium">google+</a>
           | <a class="addthis_counter addthis_pill_style"></a>
           | </div>
           | <!-- AddThis Button END -->
         .github-buttons
-          | <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=watch&count=true" width="100" height="20"></iframe>
-          | <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=fork&count=true" width="100" height="20"></iframe>
+          | <a class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=watch&count=true" width="100" height="20"> Star </a>
+          | <a class="github-btn" src="http://ghbtns.com/github-btn.html?user=nolimits4web&repo=framework7&type=fork&count=true" width="100" height="20"> Fork </a>
         .clearfix
     footer
       .center
@@ -278,23 +275,7 @@ html
           a(href="./apps/") Demo Apps
           a(href="./showcase/") Showcase
         .copy 2015 © Framework7 by iDangero.us
-
-    script.
-      var addthis_config = {"data_track_addressbar":true};
-      var addthis_share = {url:'http://www.idangero.us/framework7/'};
-    script(src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52c9b0605d63191c")
     script(src="js/vendor/jquery-1.11.0.min.js")
     script(src="js/plugins.js")
     script(src="js/main.js")
-    script.
-      var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '1l3voeJ']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();
-    script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-13289120-8', 'idangero.us');
-      ga('send', 'pageview');      
-
     
