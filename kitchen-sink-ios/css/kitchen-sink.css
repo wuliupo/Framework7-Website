@@ -44,6 +44,9 @@
   -o-transition: 0ms;
   transition: 0ms;
 }
+.page[data-page="tabbar"] .page-content {
+  padding-bottom: 44px;
+}
 .page[data-page="tabbar-labels"] .page-content {
   padding-bottom: 50px;
 }
@@ -88,13 +91,10 @@ i.ks-tabbar-icon-4 {
   width: 100%;
   height: 100%;
 }
-.ks-demo-slider,
-.ks-carousel-slider {
-  font-size: 25px;
-  font-weight: 300;
-}
 .ks-demo-slider .swiper-slide,
 .ks-carousel-slider .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;

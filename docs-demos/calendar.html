@@ -16,9 +16,9 @@
           <div data-page="home" class="page navbar-fixed">
             <div class="navbar">
               <div class="navbar-inner">
-                <div class="left"></div>
+                <div class="left"> </div>
                 <div class="center">Calendar</div>
-                <div class="right"></div>
+                <div class="right"> </div>
               </div>
             </div>
             <div class="page-content">
@@ -27,7 +27,7 @@
                 <ul>
                   <li>
                     <div class="item-content">
-                      <div class="item-inner">
+                      <div class="item-inner"> 
                         <div class="item-input">
                           <input type="text" placeholder="Your birth date" readonly id="calendar-default">
                         </div>
@@ -41,7 +41,7 @@
                 <ul>
                   <li>
                     <div class="item-content">
-                      <div class="item-inner">
+                      <div class="item-inner"> 
                         <div class="item-input">
                           <input type="text" placeholder="Select date" readonly id="calendar-date-format">
                         </div>
@@ -55,9 +55,51 @@
                 <ul>
                   <li>
                     <div class="item-content">
-                      <div class="item-inner">
+                      <div class="item-inner"> 
                         <div class="item-input">
                           <input type="text" placeholder="Select multiple dates" readonly id="calendar-multiple">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">Range Picker</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" placeholder="Select date range" readonly id="calendar-range">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">With Events</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" placeholder="Select date" readonly id="calendar-events">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">Disabled Dates</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" placeholder="Select date" readonly id="calendar-disabled">
                         </div>
                       </div>
                     </div>
@@ -111,6 +153,34 @@
           input: '#calendar-multiple',
           dateFormat: 'M dd yyyy',
           multiple: true
+      });
+      // Range Picker
+      var calendarRange = myApp.calendar({
+          input: '#calendar-range',
+          dateFormat: 'M dd yyyy',
+          rangePicker: true
+      });
+      // With events
+      var today = new Date();
+      var weekLater = new Date().setDate(today.getDate() + 7);
+      var calendarEvents = myApp.calendar({
+          input: '#calendar-events',
+          dateFormat: 'M dd yyyy',
+          events: {
+            from: today,
+            to: weekLater
+          }
+      });
+      // Disabled
+      var today = new Date();
+      var weekLater = new Date().setDate(today.getDate() + 7);
+      var calendarDisabled = myApp.calendar({
+          input: '#calendar-disabled',
+          dateFormat: 'M dd yyyy',
+          disabled: {
+            from: today,
+            to: weekLater
+          }
       });
       // Inline with custom toolbar
       var $$ = Dom7;
